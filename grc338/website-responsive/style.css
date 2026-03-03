@@ -1,0 +1,199 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+
+div.home-container { 
+	background: url(home-background.jpg) center center fixed;
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+}
+
+div.container { 
+	position: relative;
+	min-height: 100vh;
+}
+
+/* >>> IMPORTANT: you have to change the wrap of the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class. And you need a div with the class container and all the other pages.  */
+
+body {
+	font-family: sans-serif;
+	background-color: rgb(255, 0, 0);
+}
+
+main { 
+	padding: 2em 3em 3em;
+	margin: 0;
+	background: rgb(255, 255, 255);
+
+}
+
+.box {
+	padding: 0;
+	margin: 2em 3em 2em 3em;
+}
+
+img {
+    width: 100%; /*Please leave this line.*/
+    display: block;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	background: rgb(213, 208, 208);
+	padding: 2em 3em 2em;
+}
+
+h1 {
+	width: 18em;
+	}
+
+h2, h3, h4 {
+		font-weight: 600;
+}
+
+h2 {
+	font-size: 2em;
+	margin: 1em 0 1em;
+	font-family: sans-serif;
+}
+	
+h3 {
+	font-size: 1.5em;
+	margin: 1em 0 0.5em;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+nav ul  {
+	text-align: right;
+}
+	
+ul li 	{
+	list-style-type: none;
+}
+
+figure {
+	margin-bottom: 2em;
+}
+
+main.menu ul {
+	margin: 2em 0;
+}	
+
+main.menu ul li {
+	margin: 1.5em 0 2em;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+}	
+
+p {
+	margin: 1em 0 1em;
+	font-family: sans-serif;
+}
+	
+p.description {
+	grid-column: 1 / 3;
+	margin: 0.5em 0;
+}
+	
+p.price {
+	grid-row: 1;
+	grid-column: 2;
+	color: rgb(185, 16, 16);
+	text-align: right;
+	margin: 0;
+}
+	
+nav ul li {
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-bottom: 2em;
+	margin-right: 2em;
+}
+	
+nav ul li a {
+	color: rgb(245, 245, 5);
+	background-color: #0535f8;
+	padding: 0.75em 1.5em 0.75em;
+}
+
+nav ul li.selected a { 
+  color: rgb(255, 255, 255);
+  background-color:rgb(255, 167, 4);
+  font-weight: bold;
+}
+
+/* article styling */
+article {
+  background-color: rgb(8, 250, 250);
+  margin: 3em 20em;
+}
+	
+
+p.slogan {
+	font-size: 4.5em; 
+    font-family: serif;  
+    font-style: italic;
+	margin: 2em 0 2em;
+	color: rgb(251, 251, 251);	
+}
+	
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem; 
+  box-sizing: border-box;
+  padding: 1em 1em;
+  background: rgb(245, 245, 5);
+}
+
+address {
+	color: rgb(246, 162, 6);
+	padding: 0 0 5em;      /* just adding for now so there's more space between footer and address */
+}
+
+footer p {
+	margin: 0;
+}
+
+@media screen and (min-width: 60em) {
+	
+    header, main, div.home-container, div.container{
+        max-width: 90em;      
+        margin-left: auto;
+        margin-right: auto;    
+    }
+
+	nav ul li {
+        display: inline;
+        margin-left: 1.5em;
+        margin-bottom: 0;
+    }
+
+	nav ul li a {
+		font-size: 1.5em;
+		padding: 1em 2em 1em;
+	}
+
+	main.menu ul {
+		margin: 2em 0em 2em;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+	}	
+
+	main.menu ul li {
+		margin: 1em;
+	}
+
+}
