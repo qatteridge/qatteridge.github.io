@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>about</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/fth1vqv.css">
+  <link rel="stylesheet" href="https://use.typekit.net/fth1vqv.css">
+</head>
+
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor"></div>
+
+  <!-- NAV -->
+  <nav class="simple-nav">
+    <a href="index.html">home</a>
+    <a href="design.html">design</a>
+    <a href="media.html">media</a>
+    <a href="contact.html">contact</a>
+  </nav>
+
+  <!-- ABOUT PAGE -->
+  <main class="about-page">
+
+    <div class="about-container">
+
+      <h1>about me</h1>
+
+      <p class="lead">
+        making creative design solutions rooted in strategy and storytelling.
+      </p>
+
+      <p>
+        I am a Graphic Communication student concentrating in Graphics for Packaging at California Polytechnic State University, San Luis Obispo. I am continuing to create and design art in all different mediums. My biggest passion is getting to collaborate and be a part of hands-on projects. I have a strong background in branding, social media, photography, video production, and litigation graphics. Don't hesitate to reach out if you have any questions or want to connect.
+      </p>
+
+    </div>
+
+  </main>
+
+  <!-- CURSOR SCRIPT -->
+  <script>
+    const cursor = document.querySelector(".cursor");
+
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.left = e.clientX + "px";
+      cursor.style.top = e.clientY + "px";
+    });
+
+    document.querySelectorAll("a").forEach(el => {
+      el.addEventListener("mouseenter", () => cursor.classList.add("hover"));
+      el.addEventListener("mouseleave", () => cursor.classList.remove("hover"));
+    });
+  </script>
+
+  <script src="cursor.js"></script>
+
+</body>
+</html>
