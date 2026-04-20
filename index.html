@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>quinn atteridge</title>
+
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://use.typekit.net/fth1vqv.css">
+      <link rel="stylesheet" href="https://use.typekit.net/fth1vqv.css">
+    </head>
+    <body>
+
+      <div class="cursor"></div>
+
+      <!-- FIXED NAV (stays on top) -->
+      <nav class="cover-nav">
+        <a href="about.html">about</a>
+        <a href="design.html">design</a>
+        <a href="media.html">media</a>
+        <a href="contact.html">contact</a>
+      </nav>
+
+      <!-- HERO / COVER -->
+      <section class="hero">
+        <h1>quinn atteridge</h1>
+        <p>multidisciplinary creative</p>
+      </section>
+
+      <!-- IMAGE SECTION 1 -->
+      <section class="scroll-image img1"></section>
+
+      <!-- IMAGE SECTION 2 -->
+      <section class="scroll-image img2"></section>
+
+      <script>
+        const cursor = document.querySelector(".cursor");
+
+        document.addEventListener("mousemove", (e) => {
+          cursor.style.left = e.clientX + "px";
+          cursor.style.top = e.clientY + "px";
+        });
+      </script>
+
+      <script src="cursor.js"></script>
+
+    </body>
+  </html>
