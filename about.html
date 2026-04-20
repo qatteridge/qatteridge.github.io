@@ -1,64 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>about</title>
+    <title>about</title>
 
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://use.typekit.net/fth1vqv.css">
-  <link rel="stylesheet" href="https://use.typekit.net/fth1vqv.css">
-</head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fth1vqv.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fth1vqv.css">
+  </head>
 
-<body>
+  <!-- ===================== ABOUT PAGE ===================== -->
 
-  <!-- CUSTOM CURSOR -->
-  <div class="cursor"></div>
+  <body>
 
-  <!-- NAV -->
-  <nav class="simple-nav">
-    <a href="index.html">home</a>
-    <a href="design.html">design</a>
-    <a href="media.html">media</a>
-    <a href="contact.html">contact</a>
-  </nav>
+    <div class="cursor"></div>
 
-  <!-- ABOUT PAGE -->
-  <main class="about-page">
+    <nav class="simple-nav">
+      <a href="index.html">home</a>
+      <a href="design.html">design</a>
+      <a href="media.html">media</a>
+      <a href="contact.html">contact</a>
+    </nav>
 
-    <div class="about-container">
+    <section class="about-page">
 
-      <h1>about me</h1>
+      <!-- FULL BACKGROUND PHOTO WALL -->
+      <div class="about-wall">
 
-      <p class="lead">
-        making creative design solutions rooted in strategy and storytelling.
-      </p>
+        <!-- LEFT COLUMN -->
+        <div class="wall-col">
+          <img src="images/dunesand.jpg">
+          <img src="images/italia.JPG">
+          <img src="images/beach.jpg">
+          <img src="images/cards.jpg">
+          
+        </div>
 
-      <p>
-        I am a Graphic Communication student concentrating in Graphics for Packaging at California Polytechnic State University, San Luis Obispo. I am continuing to create and design art in all different mediums. My biggest passion is getting to collaborate and be a part of hands-on projects. I have a strong background in branding, social media, photography, video production, and litigation graphics. Don't hesitate to reach out if you have any questions or want to connect.
-      </p>
+        <!-- RIGHT COLUMN -->
+        <div class="wall-col">
+          <img src="images/plates.jpg">
+          <img src="images/surf.jpg">
+          <img src="images/shell.jpg">
+          <img src="images/avery.JPG">
+          
+        </div>
 
-    </div>
+      </div>
 
-  </main>
+      <!-- CONTENT OVERLAY -->
+      <div class="about-overlay">
 
-  <!-- CURSOR SCRIPT -->
-  <script>
-    const cursor = document.querySelector(".cursor");
+        <div class="about-card intro">
+          <h2>about me</h2>
+          <p>Hello! Thanks for getting to know me more. I am a Graphic Communication student concentrating in Graphics for Packaging studying at California Polytechnic University in San Luis Obipso, CA that continues to create and design art in all different mediums. My biggest passion is getting to create and be apart of hands-on projects. I have a strong background in branding, social media, photography, video production, and litigation graphics. Don't hesitate to reach out if you have any questions or want to connect!</p>
+        </div>
 
-    document.addEventListener("mousemove", (e) => {
-      cursor.style.left = e.clientX + "px";
-      cursor.style.top = e.clientY + "px";
-    });
+        <div class="about-card spotify">
+          <h2>on repeat</h2>
 
-    document.querySelectorAll("a").forEach(el => {
-      el.addEventListener("mouseenter", () => cursor.classList.add("hover"));
-      el.addEventListener("mouseleave", () => cursor.classList.remove("hover"));
-    });
-  </script>
+          <p>5 songs i've been loving</p>
+          <ul>
+            <li>(diana) you don't even know — fred again..</li>
+            <li>canopée — polo & pan</li>
+            <li>all i need — maribou state, andreya triana </li>
+            <li>reserved — berjan</li>
+            <li>JOY (nobody ever) — joy anonymous, tamaraebi</li>
+          </ul>
 
-  <script src="cursor.js"></script>
+          <p>want to hear these? click <a href="https://open.spotify.com/user/219sdmysk6s2iakkfy7cp2imt?si=f628c6832525456a" class="spotify-link">HERE</a></p>
+        </div>
 
-</body>
+        <div class="about-card travel">
+          <h2>travel map</h2>
+          <p>i want to travel to denmark, turkey, japan, and australia.</p>
+          <div class="map-wrap">
+            <img src="media/worldmap.png">
+            <span class="map-pin italy"></span>
+            <span class="map-pin japan"></span>
+            <span class="map-pin london"></span>
+            <span class="map-pin australia"></span>
+          </div>
+        </div>
+
+        <div class="about-card mood">
+          <h2>what's quinn up to?</h2>
+            <ul style="list-style-type: square;">
+              <li>sketching</li>
+              <li>beach volleyball</li>
+              <li>vlogging</li>
+              <li>cooking</li>
+              <li>road trips</li>
+              <li>camping</li>
+              <li>ceramics</li>
+              <li>photoshoots</li>
+            </ul>
+        </div>
+
+      </div>
+
+    </section>
+
+    <script src="cursor.js"></script>
+  </body>
 </html>
